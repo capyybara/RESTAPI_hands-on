@@ -3,17 +3,23 @@
 第7回課題に関係して、課題に取り組む前にハンズオンをやってみました。<br>
 以下に、リクエストごとに実行できたものの写真などを掲載しています。
 
+<br><br>
+
 ## GETリクエスト
 
 - curl＆ターミナルより
 
 <img width="635" alt="APIハンズオン GETリクエスト" src="https://github.com/capyybara/RESTAPI_hands-on/assets/137416338/4c7609f6-6b51-44b9-8d82-5af1f351116b">
 
+<br>
+<br>
+
 - Postmanより
 <br>
 
 <img width="877" alt="Postman GETリクエスト" src="https://github.com/capyybara/RESTAPI_hands-on/assets/137416338/9cf6fcc7-5287-413c-9087-8a2959235ffd">
 
+<br>
 <br>
 
 ## POSTリクエスト
@@ -40,6 +46,7 @@ vary: Accept, Authorization, Cookie, X-GitHub-OTP
 なぜか、Postmanでは　（blog02でも）エラーが出たため実行できませんでした…💦
 <br>
 <br>
+
 
 ##  PATCHリクエスト
 

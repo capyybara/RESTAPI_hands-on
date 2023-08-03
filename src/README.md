@@ -7,19 +7,35 @@
 
 - curl＆ターミナルより
 
-![57DEB327-11EF-42BC-81C7-63749CEB3130.png](..%2F..%2F..%2FPictures%2F%E5%86%99%E7%9C%9F%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA.photoslibrary%2Foriginals%2F5%2F57DEB327-11EF-42BC-81C7-63749CEB3130.png)
+<img width="635" alt="APIハンズオン GETリクエスト" src="https://github.com/capyybara/RESTAPI_hands-on/assets/137416338/4c7609f6-6b51-44b9-8d82-5af1f351116b">
 
 - Postmanより
 <br>
 
-![8131FA66-2D25-4AAC-B16E-6F413CFC5E4E.png](..%2F..%2F..%2FPictures%2F%E5%86%99%E7%9C%9F%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA.photoslibrary%2Foriginals%2F8%2F8131FA66-2D25-4AAC-B16E-6F413CFC5E4E.png)
+<img width="877" alt="Postman GETリクエスト" src="https://github.com/capyybara/RESTAPI_hands-on/assets/137416338/9cf6fcc7-5287-413c-9087-8a2959235ffd">
 
 <br>
 
 ## POSTリクエスト
 
-![E938D1A6-8082-4104-A615-48CC483CC1F8.png](..%2F..%2F..%2FPictures%2F%E5%86%99%E7%9C%9F%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA.photoslibrary%2Foriginals%2FE%2FE938D1A6-8082-4104-A615-48CC483CC1F8.png)
+```
+curl -i -H "Authorization: token github_pat_1cCEG0Ml3E1〜" \
+>     -d '{
+>         "name": "blog",
+>         "auto_init": true,
+>         "private": true,
+>         "gitignore_template": "Nanoc"
+>       }' \
+>     https://api.github.com/user/repos
+HTTP/2 201 
+server: GitHub.com
+date: Thu, 03 Aug 2023 05:07:25 GMT
+content-type: application/json; charset=utf-8
+content-length: 5700
+cache-control: private, max-age=60, s-maxage=60
+vary: Accept, Authorization, Cookie, X-GitHub-OTP
 
+```
 
 なぜか、Postmanでは　（blog02でも）エラーが出たため実行できませんでした…💦
 <br>
@@ -27,5 +43,5 @@
 
 ##  PATCHリクエスト
 
-![9567E25A-EDD6-4D39-8FE8-72B02BAD2BCF_1_201_a.jpeg](..%2F..%2F..%2FPictures%2F%E5%86%99%E7%9C%9F%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA.photoslibrary%2Fresources%2Frenders%2F9%2F9567E25A-EDD6-4D39-8FE8-72B02BAD2BCF_1_201_a.jpeg)
+![PATCHリクエストURL](https://github.com/capyybara/RESTAPI_hands-on/assets/137416338/628caf2e-8c03-4bf2-9253-3e82496fe80b)
 

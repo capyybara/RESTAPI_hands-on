@@ -24,6 +24,10 @@
 
 ## POSTリクエスト
 
+<br>
+
+- curl & ターミナルより
+
 ```
 curl -i -H "Authorization: token github_pat_1cCEG0Ml3E1〜" \
 >     -d '{
@@ -43,7 +47,13 @@ vary: Accept, Authorization, Cookie, X-GitHub-OTP
 
 ```
 
-なぜか、Postmanでは　（blog02でも）エラーが出たため実行できませんでした…💦
+<br>
+
+- Postmanより
+<br>
+  <img width="839" alt="POSTリクエスト Postman" src="https://github.com/capyybara/RESTAPI_hands-on/assets/137416338/eab6cf55-f225-4bb7-acb7-001aebb2e8d5">
+
+
 <br>
 <br>
 

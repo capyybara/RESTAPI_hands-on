@@ -9,7 +9,7 @@
 
 - curl＆ターミナルより
 
-<img width="635" alt="APIハンズオン GETリクエスト" src="https://github.com/capyybara/RESTAPI_hands-on/assets/137416338/4c7609f6-6b51-44b9-8d82-5af1f351116b">
+![REST API GET curl全体 2023-08-01 14 13 38](https://github.com/capyybara/RESTAPI_hands-on/assets/137416338/fbd53e3d-c72e-4af1-adb0-88f405d96d7d)
 
 <br>
 <br>
@@ -61,4 +61,27 @@ vary: Accept, Authorization, Cookie, X-GitHub-OTP
 ##  PATCHリクエスト
 
 ![PATCHリクエストURL](https://github.com/capyybara/RESTAPI_hands-on/assets/137416338/628caf2e-8c03-4bf2-9253-3e82496fe80b)
+
+
+```
+
+curl -i -X PATCH \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: token github_pat_11BYM5l3E~" \
+  https://api.github.com/repos/capyybara/blog \
+  -d '{
+    "name":"hello-world-blog",
+    "description":"This is your blog repository",
+    "homepage":"https://github.com",
+    "private":false
+  }'
+
+HTTP/2 200 
+server: GitHub.com
+date: Thu, 03 Aug 2023 06:04:05 GMT
+content-type: application/json; charset=utf-8
+
+
+
+```
 
